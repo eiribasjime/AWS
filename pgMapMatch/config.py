@@ -16,7 +16,7 @@ Save this file as `config.py`.
 pgInfo = {'db': 'postgres',
           'schema': 'public',    # schema with GPS traces and streets table
           'user': 'postgres',
-          'host': 'ec2-3-91-29-93.compute-1.amazonaws.com',
+          'host': 'localhost',
           'requirePassword': True # Prompt for password? Normally, False for localhost
           }
 

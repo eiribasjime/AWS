@@ -1,5 +1,4 @@
 import psycopg2
-import pandas as pd
 
 
 def connect_to_database():
@@ -7,7 +6,7 @@ def connect_to_database():
     Conectarse con la base de datos PostgreSQL
     '''
     try:
-        connection = psycopg2.connect(database='postgres', user='postgres', password='mn23hqiq', host='ec2-3-91-29-93.compute-1.amazonaws.com', port=5432)
+        connection = psycopg2.connect(database='postgres', user='postgres', password='mn23hqiq', host='localhost', port=5432)
         
         return connection
             
