@@ -2,7 +2,6 @@ import sys
 import tqdm
 
 
-sys.path.append(r'C:\Users\eiribasjime') #pgmapmatching route
 import pgMapMatch as pgmatch
 
 def initialize_pgmapmatching(streets_table='streets_table_nav_lr_mod', verbose=True):

@@ -12,9 +12,7 @@ if __name__ == '__main__':
 
     # print('Obtaining routes to match...')
 
-    # routes = sorted(postgre_connection.obtain_routes()) #routes must be ordered to parallelize in different pythons --> select a sublist in each python
-
-    routes = [731, 732, 733, 734, 875, 876]
+    routes = sorted(postgre_connection.obtain_routes()) #routes must be ordered to parallelize in different pythons --> select a sublist in each python
 
     sublist = routes[:len(routes)//3]
     # sublist = routes[len(routes)//3:2*len(routes)//3]
